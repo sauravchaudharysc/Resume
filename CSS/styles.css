@@ -1,0 +1,163 @@
+.top-container{
+  background-color: #194350;
+  position: relative;
+  padding-top: 90px;
+}
+
+.profile{
+  width:40%;
+  height:40%;
+  border-radius : 50%;
+  margin: auto;
+  margin-top: 5px;
+}
+body{
+  background-color: #feffde;
+  margin: 0;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1{
+  color: #233e8b;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 5.625rem;
+  /*100%=16px
+  1em=16px*/
+  font-family: 'Satisfy', cursive;
+}
+/*0 is equivalent to 0 pixel*/
+
+h2{
+  margin-top: 0;
+  margin-bottom: 1.5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #233e8b;
+}
+h3{
+  color: #1eae98;
+  margin-top: 1.5px;
+  margin-bottom: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+}
+h4{
+  margin-bottom: 2;
+  font-family: 'Roboto', sans-serif;
+}
+p{
+  margin-top: 0;
+  margin-bottom: 0px;
+font-family: 'Roboto', sans-serif;
+}
+/***AREAS OF INTEREST***/
+#Express{
+  margin: auto;;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+hr{
+  border-color: #52734d;
+ border-style:dotted;
+ border-width: 10px;
+ border-bottom: none;
+ margin: auto;
+ width: 5%;
+ margin: 100px auto;
+}
+
+.top-cloud{
+  position: absolute;
+  right: 300px;
+  top: 30px;
+}
+.bottom-cloud{
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+}
+
+.interest-row1{
+  width: 50%;
+  margin: 7% auto;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.interest-row2{
+  width: 50%;
+  margin: 7% auto;
+  line-height: 1.5;
+  direction: rtl;
+  text-align: justify;
+}
+.one{
+  width: 20%;
+  float: left;
+  margin-right: 5px ;
+
+}
+
+.two{
+  width: 20%;
+  float: right;
+  margin-left: 5px ;
+}
+
+.InterestSee{
+  width: 50%;
+  margin: auto;
+  text-align: right;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+/**Education**/
+.Education{
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+/* Table */
+.table{
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin: auto;
+  padding: 8px;
+}
+
+.table tr:nth-child(even){background-color: #f2f2f2;}
+.table tr:hover {background-color: #ddd;}
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.table td,th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 1rem;
+}
+
+/* border in table  */
+
+table,th,td{
+
+  border: 2px solid #ddd;
+}
+
+/**Contact Me**/
+.contact-me{
+  width: 50%;
+  margin: auto;
+}
+.social{
+  margin: 12px 2px;
+  width:3rem;
+}
