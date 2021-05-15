@@ -16,13 +16,7 @@
   </head>
   <body>
     <div class="top-container">
-      <img class="top-cloud" src="img/cloud.png" alt="Cloud">
-        <h1>I'm Saurav</h1>
-        <p>
-          a Computer Engineering Student
-        </p>
-        <img class="mountain" src="img/mountain.png" alt="Mountain">
-        <img class="bottom-cloud" src="img/cloud.png" alt="Cloud">
+     <!--Any Image or Flex-->
     </div>
     <div class="middle-container">
       <div class="profile">
@@ -56,6 +50,96 @@
           <table class="table"> <tr> <th> Institution Name </th> <th> Level </th> </tr> <tr> <td> MNNIT ALLAHABAD </td> <td> Btech </td> </tr> <tr> <td> KATHMANDU BERNHARDT </td> <td> +2 </td> </tr> <tr> <td> Delhi Public School </td> <td > 10 </td> </tr> </table>
         </div>
       </div>
+      <hr />
+      <div class="Skills">
+        <h2>Skills</h2>
+          <div class="Language">
+            <h3 >Languages</h3>
+            <p id="lang">C/C++</p>
+            <div class="containers">
+              <div class="skills html">90%</div>
+            </div>
+
+            <p id="lang">Java</p>
+            <div class="containers">
+              <div class="skills css">70%</div>
+            </div>
+
+            <p id="lang">Python</p>
+            <div class="containers">
+              <div class="skills js">65%</div>
+            </div>
+
+            <p id="lang">Dart</p>
+            <div class="containers">
+              <div class="skills php">50%</div>
+            </div>
+          </div>
+      </div>
+      <hr>
+      <div class="Certificates">
+        <h2>Certificates</h2>
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img class="slide-img" src="img/mountain.png">
+            <div class="text">Caption Text</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="img/mountain.png" class="slide-img">
+            <div class="text">Caption Two</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="img/mountain.png" class="slide-img">
+            <div class="text">Caption Three</div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          </div>
+          <br>
+
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+
+          <script>
+          var slideIndex = 1;
+          showSlides(slideIndex);
+
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+          }
+          </script>
+      </div>
       <hr>
       <div class="contact-me">
         <h2>Get In Touch</h2>
@@ -64,144 +148,13 @@
       <a href=""> <img class="social" src="img/github.png" alt=""></a>
 
         <h3>Mail me at : </h3>
-        <a class="btn" href="mailto:name@email.com">CONTACT ME</a>
+        <a class="btn" href="mailto:name@email.com">Mail ME</a>
       </div>
     </div>
 
 
-    <div class="bottom-container">
-      <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
-      <a class="footer-link" href="https://twitter.com/">Twitter</a>
-      <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
-      <p>© 2018 Name Surname.</p>
+    <div class="bot-container">
+      <h2 class="bottom">© 2020 Saurav Chaudhary.</h2>
     </div>
-
-  <table>
-    <tr>
-      <td><img src="https://avatars.githubusercontent.com/u/59189555?v=4" alt="Profile Picture" width="200" height="200" style="border-radius :50%"></td>
-      <td>      <h1 style="color: #f55c47">Saurav Chaudhary</h1>
-            <h3>Computer Science Engineering Student at <a href="www.mnnit.ac.in">MNNIT ALLAHABAD</a>.</h3>
-            <h4 style="text-align: justify; color: #21094e">A creative mind with an eagerness to accept challenges while learning and gaining experience from them. Passionate about development. I believe in day one rather than one day. </h4>
-</td>
-    </tr>
-  </table>
-  <hr>
-  <h3>Education</h3>
-  <table cellspacing="10">
-    <tr>
-      <th>
-      Institution Name
-      </th>
-      <th>
-        Level
-      </th>
-    </tr>
-    <tr>
-      <td>
-        MNNIT ALLAHABAD
-      </td>
-      <td style="text-align:right">
-        Btech
-      </td>
-    </tr>
-    <tr>
-      <td>
-        KATHMANDU BERNHARDT
-      </td>
-      <td style="text-align:right">
-        +2
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Delhi Public School
-      </td>
-      <td style="text-align:right">
-        10
-      </td>
-    </tr>
-  </table>
-  <hr>
-  <h3>Certificates</h3>
-  <table border="1" cellpadding="2">
-    <tr>
-      <td><ul>
-        <li>Bits & Bytes of Networking</li>
-      </ul></td>
-      <td style="text-align:right">Google</td>
-    </tr>
-    <tr>
-      <td><ul>
-        <li>BlockChain</li>
-      </ul></td>
-      <td style="text-align:right">University of Buffalo</td>
-    </tr>
-    <tr>
-      <td><ul>
-        <li>Fundamental of Digital Marking</li>
-      </ul></td>
-      <td style="text-align:right">Google</td>
-    </tr>
-    <tr>
-      <td><ul>
-        <li>Machine Learning</li>
-      </ul></td>
-      <td style="text-align:right">Stanford University</td>
-    </tr>
-  </table>
-  <hr>
-  <h3>Areas of Interest</h3>
-  <ol>
-     <li>Machine Learning</li>
-     <li>Automaton Testing</li>
-     <li>Web Scraping</li>
-     <li>BlockChain</li>
-   </ol>
-   <hr />
-   <h3>Language</h3>
-   <table>
-     <tr>
-       <td>
-         <table cellspacing="10">
-           <tr>
-             <td>C</td> <td>★★★★☆</td>
-           </tr>
-           <tr>
-             <td>C++</td> <td>★★★★★</td>
-           </tr>
-         </table>
-       </td>
-       <td>
-         <table cellspacing="10">
-           <tr>
-             <td>Python</td> <td>★★☆☆☆</td>
-           </tr>
-           <tr>
-             <td>Java</td> <td>★★★☆☆</td>
-           </tr>
-         </table>
-       </td>
-     </tr>
-   </table>
-   <hr>
-   <h3>Contact</h3>
-    <form class="" action="mailto:sauravchaudhary717@gmail.com" method="post" enctype="text/plain">
-      <label> Your Name : </label>
-      <input type="text" name="yourName" value=""><br />
-      <label>Your Email :</label>
-      <input type="email" name="yourEmail" value=""><br>
-      <label>Contact No :</label>
-      <input type="number" name="yourNumber" value=""><br>
-      <label>Message :</label><br />
-      <textarea name="name" rows="8" cols="40"></textarea><br>
-      <input type="submit" >
-    </form>
-    <hr />
-    <h3>Social Media</h3>
-    <ul>
-      <li>Facebook</li>
-      <li>Instagram</li>
-      <li>Linkedin</li>
-    </ul>
   </body>
 </html>
