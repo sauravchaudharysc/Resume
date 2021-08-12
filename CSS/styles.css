@@ -351,3 +351,29 @@ img {vertical-align: middle;}
   padding : 10px auto;
   margin-bottom: none;
 }
+
+.lbutton {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button5 {
+  background-color: #194350;
+  border-radius: 20px;
+  color: #c5e3ed;
+  border: 2px solid #555555;
+}
+
+.button5:hover {
+  background-color: #3793ae;
+
+  color: white;
+}
